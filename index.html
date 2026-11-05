@@ -3,176 +3,177 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MO STORE | المتجر الرسمي</title>
-<meta name="description" content="مرحباً بكم في MO STORE">
+<meta name="theme-color" content="#111111">
+<title>MO STORE</title>
+<!-- TikTok Pixel Code Start -->
+<script>
+!function (w, d, t) {
+  w.TiktokAnalyticsObject=t;
+  var ttq=w[t]=w[t]||[];
+  ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"];
+  ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};
+  for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);
+  ttq.instance=function(t){
+    for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);
+    return e
+  };
+  ttq.load=function(e,n){
+    var r="https://analytics.tiktok.com/i18n/pixel/events.js";
+    ttq._i=ttq._i||{};
+    ttq._i[e]=[];
+    ttq._i[e]._u=r;
+    ttq._t=ttq._t||{};
+    ttq._t[e]=+new Date;
+    ttq._o=ttq._o||{};
+    ttq._o[e]=n||{};
+    n=document.createElement("script");
+    n.type="text/javascript";
+    n.async=true;
+    n.src=r+"?sdkid="+e+"&lib="+t;
+    e=document.getElementsByTagName("script")[0];
+    e.parentNode.insertBefore(n,e)
+  };
+  ttq.load('DBM8JVJC77UFMFQAACSG');
+  ttq.page();
+}(window, document, 'ttq');
+</script>
+<!-- TikTok Pixel Code End -->
 <style>
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #090909;
-    color: white;
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, Tahoma, sans-serif;
+  background: linear-gradient(145deg,#080808,#1b1b1b,#080808);
+  color: white;
 }
 header {
-    background: #111;
-    padding: 22px;
-    text-align: center;
-    border-bottom: 1px solid #c9a227;
+  text-align: center;
+  padding: 35px 15px;
+  border-bottom: 1px solid #94702f;
 }
 .logo {
-    color: #d4af37;
-    font-size: 32px;
-    font-weight: bold;
-    letter-spacing: 2px;
+  color: #e5c477;
+  font-size: 35px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 0;
 }
-header p {
-    color: #ccc;
-    margin-bottom: 0;
+.subtitle {
+  color: #ddd;
+  margin-top: 10px;
 }
-.hero {
-    text-align: center;
-    padding: 75px 20px;
-    background: linear-gradient(135deg,#171717,#000);
+main {
+  max-width: 750px;
+  margin: 70px auto;
+  padding: 20px;
+  text-align: center;
 }
-.hero h1 {
-    color: #d4af37;
-    font-size: 32px;
+.box {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid #94702f;
+  border-radius: 20px;
+  padding: 45px 20px;
+  box-shadow: 0 10px 40px rgba(0,0,0,.4);
 }
-.hero p {
-    color: #ddd;
-    font-size: 17px;
+.welcome {
+  color: #d8c18d;
+  font-size: 18px;
+}
+h1 {
+  color: #e5c477;
+  font-size: 38px;
+}
+.description {
+  color: #ddd;
+  font-size: 17px;
+  line-height: 2;
 }
 .contact {
-    text-align: center;
-    padding: 50px 15px;
-    background: #151515;
-    margin-top: 35px;
+  margin-top: 40px;
 }
 .contact h2 {
-    color: #d4af37;
+  color: #e5c477;
+}
+.contact p {
+  color: #ddd;
+  line-height: 1.8;
 }
 .whatsapp {
-    display: inline-block;
-    background: #25d366;
-    color: white;
-    text-decoration: none;
-    padding: 15px 30px;
-    border-radius: 8px;
-    font-weight: bold;
-    font-size: 18px;
+  display: inline-block;
+  margin-top: 15px;
+  padding: 16px 40px;
+  border-radius: 40px;
+  background: linear-gradient(135deg,#f1d58f,#bd8b35);
+  color: #111;
+  text-decoration: none;
+  font-size: 19px;
+  font-weight: bold;
+  transition: .2s;
+}
+.whatsapp:hover {
+  transform: scale(1.04);
 }
 footer {
-    text-align: center;
-    padding: 22px;
-    color: #aaa;
-    background: #050505;
-    border-top: 1px solid #333;
+  text-align: center;
+  padding: 25px 10px;
+  color: #999;
+  border-top: 1px solid #55421f;
+  font-size: 14px;
 }
-.cookie-box {
-    position: fixed;
-    bottom: 12px;
-    left: 12px;
-    right: 12px;
-    background: #202020;
-    border: 1px solid #d4af37;
-    padding: 17px;
-    border-radius: 12px;
-    z-index: 9999;
-    text-align: center;
-    display: none;
+@media(max-width:500px) {
+  main {
+    margin: 35px auto;
+  }
+  h1 {
+    font-size: 29px;
+  }
+  .box {
+    padding: 35px 15px;
+  }
 }
-.cookie-box button {
-    padding: 10px 17px;
-    margin: 7px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-}
-.accept { background: #d4af37; }
-.reject { background: #444; color: white; }
 </style>
 </head>
 <body>
 <header>
-    <div class="logo">MO STORE</div>
-    <p>مرحباً بكم في متجرنا الرسمي</p>
+  <p class="logo">MO STORE</p>
+  <p class="subtitle">مرحباً بكم في متجرنا الرسمي</p>
 </header>
-<section class="hero">
+<main>
+  <section class="box">
+    <p class="welcome">أهلاً وسهلاً بكم</p>
     <h1>اكتشف عالم MO STORE</h1>
-    <p>منتجات مميزة وتجربة تسوق رائعة</p>
-</section>
-<section class="contact" id="contact">
-    <h2>تواصل معنا</h2>
-    <p>للطلب والاستفسار تواصل معنا عبر واتساب</p>
-    <a class="whatsapp"
-       href="https://wa.me/972566569109"
-       onclick="trackContact()">
-       تواصل عبر واتساب
-    </a>
-</section>
+    <p class="description">
+      منتجات مميزة وتجربة تسوق رائعة
+    </p>
+    <div class="contact">
+      <h2>تواصل معنا</h2>
+      <p>
+        للطلب والاستفسار تواصل معنا عبر واتساب
+      </p>
+      <a
+        class="whatsapp"
+        id="whatsapp-button"
+        href="https://wa.me/972566569109"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        تواصل الآن
+      </a>
+    </div>
+  </section>
+</main>
 <footer>
-    <p>MO STORE © 2026</p>
-    <p>جميع الحقوق محفوظة</p>
+  <p>MO STORE © 2026</p>
+  <p>جميع الحقوق محفوظة</p>
 </footer>
-<div class="cookie-box" id="cookieBox">
-    <p>نستخدم ملفات التتبع لتحليل الزيارات وتحسين الإعلانات. هل توافق على ذلك؟</p>
-    <button class="accept" onclick="acceptCookies()">موافقة</button>
-    <button class="reject" onclick="rejectCookies()">رفض</button>
-</div>
 <script>
-function loadTikTokPixel() {
-    if (window.pixelLoaded) return;
-    window.pixelLoaded = true;
-    !function(w,d,t) {
-        w.TiktokAnalyticsObject=t;
-        var ttq=w[t]=w[t]||[];
-        ttq.methods=[
-            "page","track","identify","instances","debug",
-            "on","off","once","ready","alias","group",
-            "enableCookie","disableCookie","holdConsent",
-            "revokeConsent","grantConsent"
-        ];
-        ttq.setAndDefer=function(t,e) {
-            t[e]=function() {
-                t.push([e].concat(Array.prototype.slice.call(arguments,0)));
-            };
-        };
-        for(var i=0;i<ttq.methods.length;i++) {
-            ttq.setAndDefer(ttq,ttq.methods[i]);
-        }
-        ttq.load=function(e) {
-            var r="https://analytics.tiktok.com/i18n/pixel/events.js";
-            var s=d.createElement("script");
-            s.async=true;
-            s.src=r+"?sdkid="+e+"&lib="+t;
-            var a=d.getElementsByTagName("script")[0];
-            a.parentNode.insertBefore(s,a);
-        };
-        ttq.load('DBLREDJC77UFMFQA9FN0');
-        ttq.page();
-    }(window,document,'ttq');
-}
-function trackContact() {
-    if(window.ttq) {
-        ttq.track('Contact');
-    }
-}
-function acceptCookies() {
-    localStorage.setItem("mo_cookie_consent","accepted");
-    document.getElementById("cookieBox").style.display="none";
-    loadTikTokPixel();
-}
-function rejectCookies() {
-    localStorage.setItem("mo_cookie_consent","rejected");
-    document.getElementById("cookieBox").style.display="none";
-}
-window.addEventListener("load",function() {
-    const consent=localStorage.getItem("mo_cookie_consent");
-    if(consent==="accepted") {
-        loadTikTokPixel();
-    } else if(consent!=="rejected") {
-        document.getElementById("cookieBox").style.display="block";
-    }
+document.getElementById("whatsapp-button").addEventListener("click", function() {
+  if (window.ttq) {
+    window.ttq.track("Contact");
+  }
 });
 </script>
 </body>
